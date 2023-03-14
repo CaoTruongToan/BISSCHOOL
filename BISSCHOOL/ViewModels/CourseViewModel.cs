@@ -1,4 +1,5 @@
 ﻿using BISSCHOOL.Models;
+using Microsoft.Build.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,13 @@ namespace BISSCHOOL.ViewModels
 {
     public class CourseViewModel
     {
+        [Required]
         public string Place {get;set;}
+        [Required]
+        [FutureDate]
         public string Date { get;set;}
+        [Required]
+        [ValidTime]
         public string Time { get;set;}
         public byte Category { get;set;}
 
