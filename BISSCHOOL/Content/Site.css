@@ -16,7 +16,32 @@ textarea {
 }
 
 
-.navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: blue;
+
+
+.navbar {
+    background-color: darkcyan;
 }
+
+.navbar-brand{
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.nav-link {
+    color: white;
+}
+
+li {
+    font-size: 17px;
+}
+
+li .nav-link:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-nav flex-grow-1{
+
+    color: lightseagreen;
+}
+

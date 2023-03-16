@@ -1,6 +1,17 @@
-﻿@{
+﻿@Model IEnumerable<BISSCHOOL.Models.Course>
+@{
     ViewBag.Title = "Home Page";
 }
+<div class="row">
+    <ul>
+        @foreach(var course in Model)
+            {
+                <li>
+                    @course.DataTime - @course.Lecturer.Name
+                </li>
+            }
+    </ul>
+</div>
 
 <main>
     <section class="row" aria-labelledby="aspnetTitle">
