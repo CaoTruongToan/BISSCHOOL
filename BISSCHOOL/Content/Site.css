@@ -16,8 +16,7 @@ textarea {
 }
 
 
-
-
+/*Header*/
 .navbar {
     background-color: darkcyan;
 }
@@ -45,3 +44,34 @@ li .nav-link:hover{
     color: lightseagreen;
 }
 
+/*Course layout*/
+.course {
+    list-style: none;
+}
+
+.course > li{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.details{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+.date bg-danger{
+    width: 60px;
+}
+
+.date {
+    text-align: center;
+    background-color: #00FFFF;
+    color: white;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.details col-lg-1{
+    width: 60px;
+}

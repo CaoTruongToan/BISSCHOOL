@@ -16,7 +16,10 @@ namespace BISSCHOOL.Controllers
 
         public ActionResult Index()
         {
-            var upcommingCourses = _dbcontext.Courses.Include(c => c.Lecturer).Include(c => c.CategoryId).Where(c => c.DateTime > DateTime.Now);
+            var upcommingCourses = _dbcontext.Courses
+                .Include(c => c.Lecturer)
+                .Include(c => c.Category)
+                .Where(c => c.DateTime > DateTime.Now);
             return View(upcommingCourses);
         }
 
