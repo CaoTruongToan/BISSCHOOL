@@ -75,3 +75,7 @@ li .nav-link:hover{
 .details col-lg-1{
     width: 60px;
 }
+
+.calendar{
+    background-color: aqua;
+}
